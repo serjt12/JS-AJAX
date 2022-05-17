@@ -1,0 +1,9 @@
+<h3>Visibilidad de elementos en una peticion http AJAX (Asynchronous JavaScript And XML)</h3>
+<input type="text" [(ngModel)]="userURL" placeholder="Ingrese una URL">
+<p>puedes usar esta como ejemplo: https://pokeapi.co/api/v2/pokemon/ditto</p>
+<button (click)="showContent()">Mostrar Contenidos</button>
+<p>Actual URL: {{currentURL}}</p>
+<p class="data"> respuesta: {{urlResponse | json }}</p>
+<p>Codigo de estado: {{status}}</p>
+<p>Estado: {{statusText}}</p>
+<p>Headers: {{headers | json }}</p>

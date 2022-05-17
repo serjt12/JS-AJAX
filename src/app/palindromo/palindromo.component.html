@@ -1,0 +1,7 @@
+<h3>Encuentra el palindromo</h3>
+<input class="input" type="text" [(ngModel)]="text" placeholder="Ingrese una palabra">
+<button *ngIf="!isPalindrome" (click)="checkText()">Verificar si tu palabra es palindromo</button>
+<button *ngIf="isPalindrome" (click)="reset()">Ingresar Nueva palabra</button>
+
+<p>{{text}}</p>
+<p [ngClass]="isPalindrome ? 'is-palindrome' : 'is-not-palindrome'">La palabra ingresada es palindromo: {{isPalindrome}}</p>

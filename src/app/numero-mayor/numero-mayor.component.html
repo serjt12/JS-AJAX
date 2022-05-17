@@ -1,0 +1,6 @@
+<h3>Encuentra el mayor de dos numeros</h3>
+<input type="text" [(ngModel)]="firstNumber" placeholder="Ingrese un numero">
+<input type="text" [(ngModel)]="secondNumber" placeholder="Ingrese un numero">
+<button (click)="checkGreatest()">Verificar cual es el mayor</button>
+<p *ngIf="greatest != 0">El numero mayor es: {{greatest}}</p>
+<hr>

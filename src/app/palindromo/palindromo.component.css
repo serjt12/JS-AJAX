@@ -1,0 +1,12 @@
+.is-palindrome {
+    background-color: green;
+}
+.is-not-palindrome {
+    background-color: red;
+}
+
+p {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
